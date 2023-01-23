@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Películas</title>
+    <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <div class="descrip">
+            <p id="fullImgP"></p>
+        </div>
+
+        <div class="info">
+        <p id="Director"></p>
+        <p id="año"></p>
+        <p id="gen"></p>
+        <p id="act"></p>
+        </div>
+
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h1><span>Lista de Películas</span></h1>
+    <div class="movie-gallery" id="movieGalley" >
+        <div id="bruja"><img src="imgs/witch.jpg" onclick="openFullImgW()" alt="">
+            <button class="borrar" id="borrarBruja" >Borrar Película</button>
+        </div>
+
+        <div id="donnie"><img src="imgs/donnie.webp" onclick="openFullImgDonnie()"alt="">
+            <button class="borrar" id="borrarDonnie" >Borrar Película</button>
+        </div>
+
+        <div id="harry"><img src="imgs/harry-potter-reliquias-muerte-parte-ii.webp" onclick="openFullImgHarry()"alt="">
+            <button class="borrar" id="borrarHarry" >Borrar Película</button>
+        </div>
+
+        <div id="inter"><img src="imgs/interstelar.jpg" onclick="openFullImgInt()"alt="">
+            <button class="borrar" id="borrarInter" >Borrar Película</button>
+        </div>
+
+        <div id="nacho"><img src="imgs/nacho.webp" onclick="openFullImgNacho()"alt="">
+            <button class="borrar" id="borrarNacho" >Borrar Película</button>
+        </div>
+
+        <div id="faro"><img src="imgs/faro.jpg" onclick="openFullImgFaro()"alt="">
+            <button class="borrar" id="borrarFaro" >Borrar Película</button>
+        </div>
+
+        <div id="john"><img src="imgs/john.jpg" onclick="openFullImgJohn()"alt="">
+            <button class="borrar" id="borrarJohn" >Borrar Película</button>
+        </div>
+
+        <div id="rata"><img src="imgs/rata.webp" onclick="openFullImgRata()" alt="">
+            <button class="borrar" id="borrarRata" >Borrar Película</button>
+        </div>
+    </div>
+    
+    <script src="lista.js" ></script>
+</body>
+</html>
